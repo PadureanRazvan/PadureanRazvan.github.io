@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Apps</title>
+    </head>
+     <body id="body2">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="index.html">Home</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link applications" href="index2.html">Apps <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://www.linkedin.com/in/razvan-padurean-617b48a5/">LinkedIn</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Cv</a>
+                            <a class="dropdown-item" href="#">Gallery</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">LinkedIn</a> -->
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+        <div class="container-Apps flip-in-hor-bottom">
+
+
+            <div class="app rpss ">
+                <h1 class="apptitle rpstext">Rock Paper Scissors!</h1>
+                <h3 class="rpstext">🌕📃✂Please select your weapon!🌕📃✂</h3>
+                <select id="player-select">
+                        <option>Rock</option>
+                        <option>Paper</option>
+                        <option>Scissors</option>
+                    </select> 
+                    <button onclick="run()">Run</button>
+
+                            <h3 class="rpstext">Computer will select on it's own</h3>
+                            <select id="computer-select">
+                                <option>Rock</option>
+                                <option>Paper</option>
+                                <option>Scissors</option>
+                            </select> <br>
+                            <br>
+                            <br>
+                            <h3 id="result"></h3>
+            </div>
+
+
+
+
+
+            <div class="app calc">
+                <div class="main">
+                    <form name="form">
+                     <input  class="textview" name="textview">
+                    </form>
+                    <table class="btnsc">
+                     <tr>
+                      <td><input type="button" class="buttonc" value="C" onclick="clean()"></td>
+                      <td><input type="button" class="buttonc" value="<" onclick="back()"></td>
+                      <td><input type="button" class="buttonc" value="/" onclick="insert('/')"></td>
+                      <td><input type="button" class="buttonc" value="x" onclick="insert('*')"></td>
+                      
+                     </tr>
+                     <tr>
+                      <td><input type="button" class="buttonc" value="7" onclick="insert(7)"></td>
+                      <td><input type="button" class="buttonc" value="8" onclick="insert(8)"></td>
+                      <td><input type="button" class="buttonc" value="9" onclick="insert(9)"></td>
+                      <td><input type="button" class="buttonc" value="-" onclick="insert('-')"></td>
+                     </tr>
+                     <tr>
+                      <td><input type="button" class="buttonc" value="4" onclick="insert(4)"></td>
+                      <td><input type="button" class="buttonc" value="5" onclick="insert(5)"></td>
+                      <td><input type="button" class="buttonc" value="6" onclick="insert(6)"></td>
+                      <td><input type="button" class="buttonc" value="+" onclick="insert('+')"></td>
+                     </tr>
+                     <tr>
+                      <td><input type="button" class="buttonc" value="1" onclick="insert(1)"></td>
+                      <td><input type="button" class="buttonc" value="2" onclick="insert(2)"></td>
+                      <td><input type="button" class="buttonc" value="3" onclick="insert(3)"></td>
+                      <td rowspan="5"><input type="button" style="height: 106px;" class="buttonc" value="=" onclick="equal()"></td>
+                     </tr>
+                     <tr>
+                      <td colspan="2"><input type="button" style="width: 106px;" class="buttonc" value="0" onclick="insert(0)"></td>
+                      <td><input type="button" class="buttonc" value="." onclick="insert('.')"></td>
+                     </tr>
+                     <tr>
+                     </tr>
+                    </table>
+                   </div>
+            </div>
+
+
+            <div class="app gg">
+                <h1 class="apptitle rps">Gradient Generator</h1>
+                <input oninput="takeColor()" class="color1 grdinputs" type="color" name="color1" value="#00ff00">
+	            <input oninput="takeColor()" class="color2 grdinputs" type="color" name="color2" value="#ff0000"><br>
+                <button id="randomButton" onclick="generateRandomColor()">Random</button>
+                <h3 id="code"></h3>
+            </div>
+
+
+            <div class="app lmi">
+                <h1 class="apptitle rps lmmi">Login App</h1>
+                <div>
+                    <input id="user" type="text">
+                    <input id="pass" type="password"> <button onclick="logIn()">Login</button>
+                    <h3 id="log">🔝Enter your credentials🔝</h3>
+                </div>
+            </div>
+
+
+        </div>
+
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+                <script type="text/javascript" src="main.js" ></script>
+    </body>
+    
+</html>

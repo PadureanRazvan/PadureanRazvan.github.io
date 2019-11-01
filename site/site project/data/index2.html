@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Apps</title>
+    </head>
+     <body id="body2">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="index.html">Home</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="index2.html">Apps <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://www.linkedin.com/in/razvan-padurean-617b48a5/">LinkedIn</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Cv</a>
+                            <a class="dropdown-item" href="#">Gallery</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">LinkedIn</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+        <h1>Index2</h1>
+
+        <div class="container-Apps flip-in-hor-bottom">
+
+
+            <div class="app rps ">
+                <h1 class="apptitle rps">Rock Paper Scissors!</h1>
+                <h3>Please select</h3>
+                <select id="player-select">
+                        <option>Rock</option>
+                        <option>Paper</option>
+                        <option>Scissors</option>
+                    </select> 
+                    <button onclick="run()">Run</button>
+
+                            <h3>Computer will select on it's own</h3>
+                            <select id="computer-select">
+                                <option>Rock</option>
+                                <option>Paper</option>
+                                <option>Scissors</option>
+                            </select> 
+            </div>
+
+
+
+
+
+            <div class="app calc">
+
+                <h1 class="apptitle rps">Simple Calculator</h1><br>
+
+                <div class="calculator">
+                <input class="calc input1" type="text" >
+
+                <select class="calc select" name="select" id="">
+                    <option value="Plus">Plus</option>
+                    <option value="Minus">Minus</option>
+                    <option value="Multiply">Multiply</option>
+                    <option value="Divide">Divide</option>
+                </select>
+
+                <input class="calc input2" type="text" >
+
+                <button type="button" onclick="calculate()" class="btn btn-outline-dark">=</button>           
+            </div>
+            <div id="resultDiv">0</div>
+            </div>
+
+
+
+            <div id="gradient" class="app gg">
+                <h1 class="apptitle rps">Gradient Generator</h1>
+                <input oninput="takeColor()" class="color1" type="color" name="color1" value="#00ff00">
+	            <input oninput="takeColor()" class="color2" type="color" name="color2" value="#ff0000"><br>
+                <button onclick="generateRandomColor()">Random</button>
+                <h3 id="code"></h3>
+            </div>
+
+
+
+
+
+
+
+            <div class="app lmi">
+                <h1 class="apptitle rps">Login App</h1>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="main.js"></script>
+</html>

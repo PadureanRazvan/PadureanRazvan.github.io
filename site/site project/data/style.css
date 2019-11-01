@@ -1,0 +1,257 @@
+
+body {
+    background-image: url(john-benitez-z2VJp_T3aBk-unsplash.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    
+}
+
+#body2 {
+    background-image: url(franz-roos-G2qOpSdJpyI-unsplash.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    
+}
+
+.navbar bg-light {
+    background-color: red !important;
+}
+
+.container {
+    display: grid;
+    margin: 150px;
+    align-self: center;
+    grid-template-columns: 100%;
+    border-radius: 50px;
+}
+
+.container-Apps {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.app {
+    background: lightgray;
+    border: solid black;
+    margin: 10px;
+    width: 800px;
+    height: 400px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.apptitle {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.text-container {
+    align-self: center;
+    background-color: gray;
+    text-align: center;
+    border-radius: 50px;
+}
+
+p { 
+    font-weight: bold;
+}
+
+.display-4 {
+    font-weight: bold;
+    text-emphasis: emphasis;
+}
+
+.calculator {
+    margin-top: 3rem;
+    align-self: center;
+    display: grid;
+    grid-template-areas: 
+    "in1 sel in2 but"
+}
+
+.input1 {
+    grid-area: in1;
+}
+
+.select {
+    grid-area: sel;
+}
+
+.input2 {
+    grid-area: in2;
+}
+
+.btn-outline-dark {
+    grid-area: but;
+}
+
+.calc {
+    text-align: center;
+}
+
+#resultDiv {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 5rem;
+    text-align: right;
+}
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+}
+
+.scale-in-center {
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+
+.form-control {
+    width: 50px;
+}
+
+
+/* INDEX2INDEX2INDEX2INDEX2INDEX2INDEX2INDEX2INDEX2INDEX2INDEX2INDEX2INDEX2 */
+
+
+.flip-in-hor-bottom {
+	-webkit-animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.shadow-drop-2-center {
+	-webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+#jbt:hover {
+    -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+
+ @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+ @-webkit-keyframes flip-in-hor-bottom {
+    0% {
+      -webkit-transform: rotateX(80deg);
+              transform: rotateX(80deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes flip-in-hor-bottom {
+    0% {
+      -webkit-transform: rotateX(80deg);
+              transform: rotateX(80deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
+      opacity: 1;
+    }
+  }
+  
+
+  @-webkit-keyframes shadow-drop-2-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px);
+              transform: translateZ(50px);
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
+  @keyframes shadow-drop-2-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px);
+              transform: translateZ(50px);
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
